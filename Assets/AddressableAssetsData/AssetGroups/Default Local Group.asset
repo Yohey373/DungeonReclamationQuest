@@ -29,6 +29,10 @@ MonoBehaviour:
     m_Address: W_Polyomino
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: f580ed40e78dfd34b9548911643df696
+    m_Address: C_Polyomino
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 103a17825cfe4a446b591f1c29ce6fbb, type: 2}
   m_SchemaSet:
