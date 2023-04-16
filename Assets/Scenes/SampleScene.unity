@@ -152,9 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77080ca347297f644876a624b6f06aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keys:
-  - A_Polyomino
-  - O_Polyomino
+  keys: []
+  Labels: Polyomino
 --- !u!4 &72457095
 Transform:
   m_ObjectHideFlags: 0

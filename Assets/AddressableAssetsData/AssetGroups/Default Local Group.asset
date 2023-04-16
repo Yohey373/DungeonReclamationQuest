@@ -20,19 +20,23 @@ MonoBehaviour:
   - m_GUID: 65ff117caa2299a4bbe266f9521fd989
     m_Address: O_Polyomino
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Polyomino
   - m_GUID: e9c360a7eba51bf4ab7e0fae1d9f73b7
     m_Address: A_Polyomino
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Polyomino
   - m_GUID: 9820ddd60a2d7034386a0413f3028577
     m_Address: W_Polyomino
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Polyomino
   - m_GUID: f580ed40e78dfd34b9548911643df696
     m_Address: C_Polyomino
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Polyomino
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 103a17825cfe4a446b591f1c29ce6fbb, type: 2}
   m_SchemaSet:
