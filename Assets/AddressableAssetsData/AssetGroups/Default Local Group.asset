@@ -37,6 +37,30 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Polyomino
+  - m_GUID: 5243a574e6c056f4dba9c0f1b47c4dcb
+    m_Address: Assets/2DAssets/Polyomino/Prefabs/Z_Polyomino.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e8094be6bda9f9c4ba5092486218436e
+    m_Address: Assets/2DAssets/Polyomino/Prefabs/T_Polyomino.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1d004790548d48d4b8b4c97afe1a4604
+    m_Address: Assets/2DAssets/Polyomino/Prefabs/S_Polyomino.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 42658ccbc84872e49a508b1bd4f84f40
+    m_Address: Assets/2DAssets/Polyomino/Prefabs/L_Polyomino.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4867de470781e2741a3d0ce01bf2659b
+    m_Address: Assets/2DAssets/Polyomino/Prefabs/J_Polyomino.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cee26ce49bda52547a1ea27d9429b013
+    m_Address: Assets/2DAssets/Polyomino/Prefabs/I_Polyomino.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 103a17825cfe4a446b591f1c29ce6fbb, type: 2}
   m_SchemaSet:
