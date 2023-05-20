@@ -1,41 +1,51 @@
+
 using System.Collections;
 using System.Collections.Generic;
+using TMPro.EditorUtilities;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-public class AssetsLoad : MonoBehaviour
+public class AssetsLoad : SingletonMonoBehaviour<AssetsLoad>
 {
     public List<string> keys = new List<string>();
     AsyncOperationHandle<IList<GameObject>> opHandle;
 
     public string Labels;
 
-    public IEnumerator Start()
+    public List<GameObject> LoadedDungeons;
+
+    public bool AssetLoaded = false;
+
+    public IEnumerator LoadDungeons()
     {
-        opHandle = Addressables.LoadAssetsAsync<GameObject>(Labels,
-        //obj => 
-        //{
-        //    Debug.Log(obj.name);
-        //},
-        //Addressables.MergeMode.Union
-        null
-        );
+        opHandle = Addressables.LoadAssetsAsync<GameObject>
+            (Labels,
+                //obj =>
+                //{
+                //    //Gets called for every loaded asset
+                //    Debug.Log(obj.name);
+                //},
+                //Addressables.MergeMode.Union
+                null
+            );
+
         yield return opHandle;
 
         if (opHandle.Status == AsyncOperationStatus.Succeeded)
         {
-            foreach (var obj in opHandle.Result)
+            for (int i = 0; i < opHandle.Result.Count; i++)
             {
-                Instantiate(obj, transform);
+                LoadedDungeons.Add(opHandle.Result[i]);
             }
-            
+            AssetLoaded = true;
         }
     }
 
     void OnDestroy()
     {
-        Addressables.Release(opHandle);
+        if (opHandle.IsValid()) {
+            Addressables.Release(opHandle);
     }
-
+    }
 }
